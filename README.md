@@ -9,6 +9,12 @@ A free, interactive interview-prep portal for Lead Full Stack engineers: study n
 
 Built and maintained by **Wishvanath Sah**.
 
+## Live preview
+
+[Open Interview Roadmap](https://wishvanathofficial.github.io/lead-fullstack-interview-prep/)
+
+![Interview Roadmap landing page](assets/img/landing-page.png)
+
 ## Structure
 
 | Path | Purpose |
@@ -18,6 +24,7 @@ Built and maintained by **Wishvanath Sah**.
 | `terms.html` | Terms & Conditions |
 | `404.html` | Not-found page used by GitHub Pages |
 | `assets/` | CSS, JavaScript, content data and notes, logo |
+| `assets/img/landing-page.png` | Landing-page screenshot |
 | `tools/check-tests.js` | Verifies every runnable exercise passes against its solution |
 
 ## Run locally
