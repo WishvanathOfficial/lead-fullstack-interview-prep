@@ -224,7 +224,10 @@ const grouped = users.groupBy(u => u.role);
 ¦¦¦js
 const uniqueSorted = nums => [...new Set(nums)].sort((a, b) => a - b);
 const loadAll = ids => Promise.all(ids.map(fetchUser));
-const groupByRole = users => Object.groupBy(users, u => u.role);
+const groupByRole = users => users.reduce((groups, user) => {
+  (groups[user.role] ||= []).push(user);
+  return groups;
+}, Object.create(null));
 ¦¦¦
 Lesson to state in interviews: plausible code is not correct code; tests and runtime checks catch these.
 --- starter ---
